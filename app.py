@@ -7,7 +7,7 @@ st.set_page_config(page_title="Diabetes Risk Predictor", page_icon="🩺")
 
 @st.cache_resource
 def load_files():
-    return joblib.load("model(1).pkl"), joblib.load("scaler(1).pkl")
+    return joblib.load("model.pkl"), joblib.load("scaler.pkl")
 
 
 model, scaler = load_files()
